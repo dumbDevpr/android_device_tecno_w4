@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/recovery/root/init.mt6580.usb.rc:root/init.mt6580.usb.rc \
     $(LOCAL_PATH)/recovery/root/meta_init.rc:root/meta_init.rc \
 		$(LOCAL_PATH)/recovery/root/meta_init.project.rc:root/meta_init.project.rc \
-    $(LOCAL_PATH)/recovery/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc
+    $(LOCAL_PATH)/recovery/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc \
+		$(LOCAL_PATH)/recovery/root/sbin/unzip:root/sbin/unzip
 
 #Allow_missing_dependencies
 ALLOW_MISSING_DEPENDENCIES=true
