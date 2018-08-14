@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -21,5 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PRODUCT_DEVICE := w4
 PRODUCT_NAME := full_w4
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := w4
+PRODUCT_MODEL := TECNO W4
 PRODUCT_MANUFACTURER := TECNO
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+		TARGET_DEVICE="TECNO W4" \
+		PRODUCT_NAME="TECNO W4"
+
+PRODUCT_GMS_CLIENTID_BASE := android-tecno
